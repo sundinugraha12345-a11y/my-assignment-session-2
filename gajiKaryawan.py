@@ -1,13 +1,15 @@
-Gajipokok  = 5000000
-Tunjangan  = 750000
+gajiPokok  = 5000000
+tunjangan  = 750000
 
-GajiKotor = Gajipokok + Tunjangan
+gajiKotor = gajiPokok + tunjangan
 
-PotonganPajak = 5 / 100
-PotonganBPJS = 2 / 100
-Persen = PotonganPajak + PotonganBPJS
+potonganPajak = 5 / 100
+potonganBPJS = 2 / 100
+persen = potonganPajak + potonganBPJS
 
-TotalPotongan = GajiKotor * Persen
+totalPotongan =  gajiKotor * persen
 
-GajiBersih = GajiKotor - TotalPotongan
-print("total bersih gaji karyawan RP:",GajiBersih)
+gajiBersih = gajiKotor - totalPotongan
+print("-"*50)
+print(f"total bersih gaji karyawan: RP {gajiBersih:,.0f}".replace(",", "."))
+print("-"*50)
